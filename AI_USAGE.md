@@ -7,4 +7,10 @@
 ### WHat I rejected:-  None
 ### Why:- One thing the AI got wrong and how I fixed it: None
 
-## Week 2- Tool(s):- What I asked for:- What I kept, changed or rejected, and why:- One thing the AI got wrong and how I fixed it:
+## Week 2- 
+### Tool(s):- Gemini 3.8 and Antigravity
+### What I asked for:- I asked for guide me to build the B6, I build it first and then I copy and understand the structure of JSX for CategoryFilter component
+### What I kept:- None
+### What I changed:- None
+### WHat I rejected:-  None
+### Why:- One thing the AI got wrong and how I fixed it: None

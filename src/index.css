@@ -154,3 +154,32 @@ a.card:hover { border-color: var(--green-light); }
   .nav { flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.95rem; }
   .container { padding: 1rem; }
 }
+
+/* Week 2 Addition B6 */
+.category-filter {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.25rem;
+}
+.category-btn {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border:1px solid black;
+  background: #fff;
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.category-btn:hover {
+  background: var(--green);
+  color: var(--green);
+  border-color: var(--green);
+}
+.category-btn.active {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}

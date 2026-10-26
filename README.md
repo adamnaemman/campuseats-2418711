@@ -14,3 +14,20 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Weekly Task
+
+Week 1 :
+
+Week 2 :
+
+Week 3 :
+B1. Move the data behind a mock API
+B2. Fetch the vendors in App
+B3. A real cart (lifted to App)
+B4. Cart page
+B5. Checkout form with validation
+B6. Your personal feature: Week 3 step
+B7. AI log, commit, push and tag
+
+Stretch task (optional)

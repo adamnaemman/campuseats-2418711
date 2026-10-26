@@ -1,0 +1,40 @@
+[
+  {
+    "id": "my-restaurant",
+    "name": "Kek Tapak Kuda",
+    "location": "Mahallah Ali, Gombak, Selangor",
+    "openHours": "7:30 am - 7:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2418711-ktk-1", "name": "Kek Tapak Kuda Matcha", "description": "Made with original Japanese matcha ganache", "price": 28.00, "category": "Kek Tapak Kuda", "popular": true, "available": true },
+      { "id": "2418711-ktk-2", "name": "Kek Tapak Kuda Bueno", "description": "Rich bueno flavor", "price": 28.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
+      { "id": "2418711-ktk-3", "name": "Kek Tapak Kuda Pistachio", "description": "Classic pistachio taste", "price": 35.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
+      { "id": "2418711-ktk-4", "name": "Kek Tapak Kuda Chocolate", "description": "Made by Original Matcha", "price": 28.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
+      { "id": "2418711-ktk-5", "name": "Kek Tapak Kuda Durian","description": "Rich durian flavor", "price": 28.00,"category": "Kek Tapak Kuda", "popular": false, "available": true },
+      { "id": "2418711-ktk-6", "name": "Kek Tapak Kuda Crunchy", "description": "Classic biscoff taste", "price": 28.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
+      { "id": "2418711-cc-4", "name": "Cheesecake Chocolate", "description": "Chocolate Belgium", "price": 28.00, "category": "Cheese Cake", "available": true },
+      { "id": "2418711-cc-5", "name": "Cheesecake Red Velvet", "description": "Rich red velvet flavor", "price": 28.00, "category": "Cheese Cake", "available": true },
+      { "id": "2418711-cc-6", "name": "Cheesecake Pandan", "description": "Classic pandan paste taste", "price": 28.00, "category": "Cheese Cake", "available": true },
+      { "id": "2418711-m-1", "name": "Mochi Matcha", "description": "Made with original Japanese matcha ganache", "price": 28.00, "category": "Mochi", "available": true },
+      { "id": "2418711-m-2", "name": "Mochi Durian", "description": "Rich durian flavor", "price": 28.00, "category": "Mochi", "available": true },
+      { "id": "2418711-m-3", "name": "Mochi Chocolate", "description": "Made by Original Matcha", "price": 28.00, "category": "Mochi", "available": true }
+    ]
+  },
+  {
+    "id": "kafe-faruq",
+    "name": "Shawarma",
+    "location": "Mahallah Faruq, Roundabout, Gombak, Selangor",
+    "openHours": "8:00 am - 9:00 pm",
+    "isOpen": false,
+    "menu": [
+      { "id": "2418711-s-1", "name": "Chicken Small Shawarma", "description": "No additional fries", "price": 6, "category": "Shawarma", "available": true },
+      { "id": "2418711-s-2", "name": "Chicken Big Shawarma", "description": "SO biggg", "price": 8, "category": "Shawarma", "available": true },
+      { "id": "2418711-s-3", "name": "Beef Small Shawarma", "description": "No additional fries", "price": 8, "category": "Shawarma", "available": true },
+      { "id": "2418711-s-4", "name": "Beef Big Shawarma", "description": "So Biggg", "price": 10, "category": "Shawarma", "available": true },
+      { "id": "2418711-s-5", "name": "Chicken Small Plate Shawarma", "description": "Has additional fries", "price": 8, "category": "Shawarma", "available": true },
+      { "id": "2418711-s-6", "name": "Beef Small Plate Shawarma", "description": "Has additional fries", "price": 10, "category": "Shawarma", "available": true }
+    ]
+  }
+  
+]
+ 

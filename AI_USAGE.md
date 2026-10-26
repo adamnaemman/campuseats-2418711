@@ -14,3 +14,12 @@
 ### What I changed:- None
 ### WHat I rejected:-  None
 ### Why:- One thing the AI got wrong and how I fixed it: None
+
+## Week 3- 
+### Tool(s):- DeepSeek V4.1 Flash 1017 by DeepSeek Harness
+### What I asked for:- I asked it for help me to improvise all the features that have inside Lab Sheet. I also asked it to guide how to finish up this week task. 
+### What I kept:- The foundation from Week 1 and Week 2
+### What I changed:- Remove vendors.JS file and Add vendors.JSON file
+### WHat I rejected:-  I rejected to add Popular features
+### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not.
+### One thing the AI got wrong and how I fixed it: None

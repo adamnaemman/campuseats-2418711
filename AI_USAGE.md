@@ -21,5 +21,5 @@
 ### What I kept:- The foundation from Week 1 and Week 2
 ### What I changed:- Remove vendors.JS file and Add vendors.JSON file
 ### WHat I rejected:-  I rejected to add Popular features
-### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not.
+### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not. I understand the AI solution before I retype to my campuseat repo
 ### One thing the AI got wrong and how I fixed it: None

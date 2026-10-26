@@ -1,6 +1,6 @@
 ## Vendors
  - Vendor 1 - My restaurant : Kek Tapak Kuda
- - Vendor 2 - My restaurant : Shawarma
+ - Vendor 2 - 2411925 Muhammad Adam Iskandar
  - Vendor 3 - 2410493 Ismael Hafetz
 
 ## Summary Weekly

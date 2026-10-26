@@ -21,20 +21,86 @@
     ]
   },
   {
-    "id": "kafe-faruq",
-    "name": "Shawarma",
-    "location": "Mahallah Faruq, Roundabout, Gombak, Selangor",
-    "openHours": "8:00 am - 9:00 pm",
-    "isOpen": false,
+    "id": "2411925-furtive-katfe",
+    "name": "Furtive Katfe",
+    "location": "Mahallah Uthman, Block E",
+    "openHours": "10:00 am - 10pm",
+    "isOpen": true,
     "menu": [
-      { "id": "2418711-s-1", "name": "Chicken Small Shawarma", "description": "No additional fries", "price": 6, "category": "Shawarma", "available": true },
-      { "id": "2418711-s-2", "name": "Chicken Big Shawarma", "description": "SO biggg", "price": 8, "category": "Shawarma", "available": true },
-      { "id": "2418711-s-3", "name": "Beef Small Shawarma", "description": "No additional fries", "price": 8, "category": "Shawarma", "available": true },
-      { "id": "2418711-s-4", "name": "Beef Big Shawarma", "description": "So Biggg", "price": 10, "category": "Shawarma", "available": true },
-      { "id": "2418711-s-5", "name": "Chicken Small Plate Shawarma", "description": "Has additional fries", "price": 8, "category": "Shawarma", "available": true },
-      { "id": "2418711-s-6", "name": "Beef Small Plate Shawarma", "description": "Has additional fries", "price": 10, "category": "Shawarma", "available": true }
+      {
+          "id": "2411925-f1",
+          "name": "Meow Cupcake",
+          "description": "Cupcake shaped like a kitty cat",
+          "price": 4.5,
+          "category": "Dessert",
+          "popular": true,
+          "available": true
+      },
+      {
+          "id": "2411925-f2",
+          "name": "Carrot Cake",
+          "description": "Yummy carrot cake, big enuf for a family",
+          "price": 16.0,
+          "category": "Dessert",
+          "popular": true,
+          "available": true
+      },
+      {
+          "id": "2411925-f3",
+          "name": "Tuna Taiyaki",
+          "description": "Fish-shaped pancake cake keki",
+          "price": 2.5,
+          "category": "Dessert",
+          "popular": false,
+          "available": false
+      },
+      {
+          "id": "2411925-d1",
+          "name": "Chocolate Catpucchino",
+          "description": "Brewed in purrfection",
+          "price": 5.0,
+          "category": "Drinks",
+          "popular": true,
+          "available": true
+      },
+      {
+          "id": "2411925-d2",
+          "name": "Pawmegranate Juice",
+          "description": "The only fruit i can make a pun of",
+          "price": 3.5,
+          "category": "Drinks",
+          "popular": false,
+          "available": false
+      },
+      {
+          "id": "2411925-d3",
+          "name": "Matcha Catnip Latte",
+          "description": "Matcha with some catnip (decoration)",
+          "price": 6.9,
+          "category": "Drinks",
+          "popular": true,
+          "available": true
+      },
+      {
+          "id": "2411925-s1",
+          "name": "Whiskers Fries",
+          "description": "Put them on your cheeks!",
+          "price": 3.0,
+          "category": "Snacks",
+          "popular": true,
+          "available": true
+      },
+      {
+          "id": "2411925-s2",
+          "name": "Meownigiri",
+          "description": "Savory onigini with cat ears",
+          "price": 1.5,
+          "category": "Snacks",
+          "popular": true,
+          "available": true
+      }
     ]
-  },
+    },
   {
     "id": "2410493-jazz-coffee",
     "name": "Jazz Coffee",

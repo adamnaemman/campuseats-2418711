@@ -11,30 +11,30 @@
 ## Weekly Task
 
 Week 1 :
-B1. Set up your repository [/]
-B2. Header component [/]
-B3. VendorCard component [/]
-B4. MenuItemCard component [/]
-B5. Footer component [/]
-B6. Compose everything in App [/]
-B7. Commit, push and tag [/]
+- B1. Set up your repository [/]
+- B2. Header component [/]
+- B3. VendorCard component [/]
+- B4. MenuItemCard component [/]
+- B5. Footer component [/]
+- B6. Compose everything in App [/]
+- B7. Commit, push and tag [/]
 
 Week 2 :
 
-B1. Move the data into scr/data/vendors.js [/]
-B2. Give components props [/]
-B3. Render lists with .map() [/]
-B4. Add state and events in App [/]
-B5. Your personal feature: Week 2 step [/]
-B6. AI log, commit, push and tag [/]
+- B1. Move the data into scr/data/vendors.js [/]
+- B2. Give components props [/]
+- B3. Render lists with .map() [/]
+- B4. Add state and events in App [/]
+- B5. Your personal feature: Week 2 step [/]
+- B6. AI log, commit, push and tag [/]
 
 Week 3 :
-B1. Move the data behind a mock API [/]
-B2. Fetch the vendors in App [/]
-B3. A real cart (lifted to App) [/]
-B4. Cart page [/]
-B5. Checkout form with validation [/]
-B6. Your personal feature: Week 3 step [/]
-B7. AI log, commit, push and tag [/]
+- B1. Move the data behind a mock API [/]
+- B2. Fetch the vendors in App [/]
+- B3. A real cart (lifted to App) [/]
+- B4. Cart page [/]
+- B5. Checkout form with validation [/]
+- B6. Your personal feature: Week 3 step [/]
+- B7. AI log, commit, push and tag [/]
 
 

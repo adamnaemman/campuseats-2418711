@@ -1,33 +1,40 @@
-# React + Vite
+## Vendors
+ - Vendor 1 - My restaurant : Kek Tapak Kuda
+ - Vendor 2 - My restaurant : Shawarma
+ - Vendor 3 - 2410493 Ismael Hafetz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Summary Weekly
+- Week 1 : 
+- Week 2 : 
+- Week 3 : This week I got to know how to add Checkout Page and also how to handle it. In my opinion, Checkout page is quite hard to implement because it has to much features like + and -. Then, we also make temporary dataset inside JSON. Before this, we used js as temp database. I know that JSON file have strictly format like double quotation.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-Weekly Task
+## Weekly Task
 
 Week 1 :
+B1. Set up your repository [/]
+B2. Header component [/]
+B3. VendorCard component [/]
+B4. MenuItemCard component [/]
+B5. Footer component [/]
+B6. Compose everything in App [/]
+B7. Commit, push and tag [/]
 
 Week 2 :
 
-Week 3 :
-B1. Move the data behind a mock API
-B2. Fetch the vendors in App
-B3. A real cart (lifted to App)
-B4. Cart page
-B5. Checkout form with validation
-B6. Your personal feature: Week 3 step
-B7. AI log, commit, push and tag
+B1. Move the data into scr/data/vendors.js [/]
+B2. Give components props [/]
+B3. Render lists with .map() [/]
+B4. Add state and events in App [/]
+B5. Your personal feature: Week 2 step [/]
+B6. AI log, commit, push and tag [/]
 
-Stretch task (optional)
+Week 3 :
+B1. Move the data behind a mock API [/]
+B2. Fetch the vendors in App [/]
+B3. A real cart (lifted to App) [/]
+B4. Cart page [/]
+B5. Checkout form with validation [/]
+B6. Your personal feature: Week 3 step [/]
+B7. AI log, commit, push and tag [/]
+
+

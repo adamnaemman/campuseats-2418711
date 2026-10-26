@@ -1,17 +1,17 @@
 [
   {
-    "id": "my-restaurant",
+    "id": "2418711-my-restaurant",
     "name": "Kek Tapak Kuda",
     "location": "Mahallah Ali, Gombak, Selangor",
     "openHours": "7:30 am - 7:00 pm",
     "isOpen": true,
     "menu": [
-      { "id": "2418711-ktk-1", "name": "Kek Tapak Kuda Matcha", "description": "Made with original Japanese matcha ganache", "price": 28.00, "category": "Kek Tapak Kuda", "popular": true, "available": true },
-      { "id": "2418711-ktk-2", "name": "Kek Tapak Kuda Bueno", "description": "Rich bueno flavor", "price": 28.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
-      { "id": "2418711-ktk-3", "name": "Kek Tapak Kuda Pistachio", "description": "Classic pistachio taste", "price": 35.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
-      { "id": "2418711-ktk-4", "name": "Kek Tapak Kuda Chocolate", "description": "Made by Original Matcha", "price": 28.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
-      { "id": "2418711-ktk-5", "name": "Kek Tapak Kuda Durian","description": "Rich durian flavor", "price": 28.00,"category": "Kek Tapak Kuda", "popular": false, "available": true },
-      { "id": "2418711-ktk-6", "name": "Kek Tapak Kuda Crunchy", "description": "Classic biscoff taste", "price": 28.00, "category": "Kek Tapak Kuda", "popular": false, "available": true },
+      { "id": "2418711-ktk-1", "name": "Kek Tapak Kuda Matcha", "description": "Made with original Japanese matcha ganache", "price": 28.00, "category": "Kek Tapak Kuda", "available": true },
+      { "id": "2418711-ktk-2", "name": "Kek Tapak Kuda Bueno", "description": "Rich bueno flavor", "price": 28.00, "category": "Kek Tapak Kuda", "available": true },
+      { "id": "2418711-ktk-3", "name": "Kek Tapak Kuda Pistachio", "description": "Classic pistachio taste", "price": 35.00, "category": "Kek Tapak Kuda", "available": true },
+      { "id": "2418711-ktk-4", "name": "Kek Tapak Kuda Chocolate", "description": "Made by Original Matcha", "price": 28.00, "category": "Kek Tapak Kuda", "available": true },
+      { "id": "2418711-ktk-5", "name": "Kek Tapak Kuda Durian","description": "Rich durian flavor", "price": 28.00,"category": "Kek Tapak Kuda", "available": true },
+      { "id": "2418711-ktk-6", "name": "Kek Tapak Kuda Crunchy", "description": "Classic biscoff taste", "price": 28.00, "category": "Kek Tapak Kuda", "available": true },
       { "id": "2418711-cc-4", "name": "Cheesecake Chocolate", "description": "Chocolate Belgium", "price": 28.00, "category": "Cheese Cake", "available": true },
       { "id": "2418711-cc-5", "name": "Cheesecake Red Velvet", "description": "Rich red velvet flavor", "price": 28.00, "category": "Cheese Cake", "available": true },
       { "id": "2418711-cc-6", "name": "Cheesecake Pandan", "description": "Classic pandan paste taste", "price": 28.00, "category": "Cheese Cake", "available": true },
@@ -34,7 +34,87 @@
       { "id": "2418711-s-5", "name": "Chicken Small Plate Shawarma", "description": "Has additional fries", "price": 8, "category": "Shawarma", "available": true },
       { "id": "2418711-s-6", "name": "Beef Small Plate Shawarma", "description": "Has additional fries", "price": 10, "category": "Shawarma", "available": true }
     ]
+  },
+  {
+    "id": "2410493-jazz-coffee",
+    "name": "Jazz Coffee",
+    "location": "Mahallah Uthman, Bloc PG Parking Lot",
+    "openHours": "6:00 pm - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2410493-m1",
+        "name": "Ice Butter Cream Latte",
+        "description": "Coffee with creamy butter flavour",
+        "price": 11.5,
+        "category": "Drinks",
+        "popular": true,
+        "available": true
+      },
+      {
+        "id": "2410493-m2",
+        "name": "Iced Coffee",
+        "description": "Chilled coffee",
+        "price": 8,
+        "category": "Drinks",
+        "popular": false,
+        "available": true
+      },
+      {
+        "id": "2410493-m3",
+        "name": "Hot Latte",
+        "description": "Espresso with steamed milk",
+        "price": 9,
+        "category": "Drinks",
+        "popular": false,
+        "available": true
+      },
+      {
+        "id": "2410493-m4",
+        "name": "Cream Puff",
+        "description": "Light pastry filled with cream",
+        "price": 4,
+        "category": "Pastries",
+        "popular": false,
+        "available": true
+      },
+      {
+        "id": "2410493-m5",
+        "name": "Croissant",
+        "description": "Buttery, flaky pastry",
+        "price": 5,
+        "category": "Pastries",
+        "popular": false,
+        "available": true
+      },
+      {
+        "id": "2410493-m6",
+        "name": "Tiramisu",
+        "description": "Coffee-flavoured layered dessert",
+        "price": 10,
+        "category": "Desserts",
+        "popular": true,
+        "available": true
+      },
+      {
+        "id": "2410493-m7",
+        "name": "Kek Batik",
+        "description": "Chocolate biscuit cake",
+        "price": 5,
+        "category": "Desserts",
+        "popular": false,
+        "available": true
+      },
+      {
+        "id": "2410493-m8",
+        "name": "Brownies",
+        "description": "Rich chocolate brownies",
+        "price": 6,
+        "category": "Desserts",
+        "popular": false,
+        "available": true
+      }
+    ]
   }
-  
 ]
  

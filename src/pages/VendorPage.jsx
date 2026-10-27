@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useParams } from 'react-router'
+import { useParams, useSearchParams } from 'react-router'
 import CategoryFilter from '../components/CategoryFilter.jsx'
 import MenuList from '../components/MenuList.jsx'
 import { Loading, ErrorMessage } from '../components/Status.jsx'
@@ -7,8 +7,17 @@ import { useVendors } from '../hooks/useVendors.js'
 
 function VendorPage() {
     const { id } = useParams()
+    const [searchParams, setSearchParams] = useSearchParams()
     const { vendors, loading, error, reload } = useVendors()
-    const [selectedCategory, setSelectedCategory] = useState('All')
+    const selectedCategory = searchParams.get('cat') ?? 'All'
+
+    function handleSelectCategory(category) {
+        if (category === 'All') {
+            setSearchParams({})
+        } else {
+            setSearchParams({ cat: category})
+        }
+    }
 
     if (loading) return <Loading/>
     if (error) return <ErrorMessage message={error} onRetry={reload}/>
@@ -37,7 +46,7 @@ function VendorPage() {
             <CategoryFilter 
                 categories={categories}
                 selectedCategory={selectedCategory}
-                onSelectCategory={setSelectedCategory}
+                onSelectCategory={handleSelectCategory}
             />
 
             <MenuList 

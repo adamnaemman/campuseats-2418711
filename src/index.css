@@ -280,3 +280,7 @@ a.card:hover { border-color: var(--green-light); }
 .error { 
   border-left: 4px solid #b3261e; 
 }
+
+.vendor-card {
+  text-decoration: none;
+}

@@ -24,11 +24,11 @@
 ### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not. I understand the AI solution before I retype to my campuseat repo
 ### One thing the AI got wrong and how I fixed it: None
 
-## Week 3- 
+## Week 4- 
 ### Tool(s):- DeepSeek V4.1 Flash 1017 by DeepSeek Harness
 ### What I asked for:- I asked it for help me to improvise all the features that have inside Lab Sheet. I also asked it to guide how to finish up this week task. 
-### What I kept:- The foundation from Week 1 and Week 2
-### What I changed:- Remove vendors.JS file and Add vendors.JSON file
-### WHat I rejected:-  I do not accept unnecessary commit,
-### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not. I understand the AI solution before I retype to my campuseat repo
+### What I kept:- The foundation from Week 1, Week 2 and Week 3. Also, kept the 2 custom hooks (useLocalStorage, useVendors), the CartProvider shape, and the route table from the lab sheet.
+### What I changed:- I moved CartPage.jsx from components folder to pages folder.
+### WHat I rejected:-  I do not accept unnecessary commit, I also reject the its first B1 suggestion which is to add a new `pickedVendorId` state, because Lab sheet does not have it
+### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not. I understand the AI solution before I retype to my campuseats repo
 ### One thing the AI got wrong and how I fixed it: None

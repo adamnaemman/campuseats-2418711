@@ -14,4 +14,3 @@ declaratively (React)?
 4. Name one benefit of splitting the UI into small components.
     Answer : Reusablity. After we created custom React component, we can using anytime in App.jsx without add anything besides the props.
 
-# Week 2 reflection

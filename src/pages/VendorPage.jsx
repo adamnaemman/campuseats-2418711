@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useParams, useSearchParams } from 'react-router'
 import CategoryFilter from '../components/CategoryFilter.jsx'
 import MenuList from '../components/MenuList.jsx'

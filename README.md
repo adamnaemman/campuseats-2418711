@@ -38,10 +38,10 @@ Week 3 :
 - B7. AI log, commit, push and tag [/]
 
 Week 4 :
-- B1. Custom hooks []
-- B2. Cart context []
-- B3. Pages and routes []
-- B4. Your personal feature: Week 4 step []
-- B5. AI log, commit, push and tag []
+- B1. Custom hooks [/]
+- B2. Cart context [/]
+- B3. Pages and routes [/]
+- B4. Your personal feature: Week 4 step [/]
+- B5. AI log, commit, push and tag [/]
 
 

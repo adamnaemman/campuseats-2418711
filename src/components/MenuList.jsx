@@ -1,6 +1,9 @@
 import MenuItemCard from './MenuItemCard.jsx'
+import { useCart } from '../hooks/useCart.js'
  
-function MenuList({ items , onAdd , emptyMessage = 'No items on this menu yet.'}) {
+function MenuList({ items, emptyMessage = 'No items on this menu yet.'}) {
+  const { addToCart } = useCart()
+  
   if (items.length === 0) {
     return <p className="muted">{emptyMessage}</p>
   }
@@ -8,7 +11,7 @@ function MenuList({ items , onAdd , emptyMessage = 'No items on this menu yet.'}
   return (
     <div className="grid">
       {items.map((item) => (
-        <MenuItemCard key={item.id} item={item} onAdd={onAdd} />
+        <MenuItemCard key={item.id} item={item} onAdd={addToCart} />
       ))}
     </div>
   )

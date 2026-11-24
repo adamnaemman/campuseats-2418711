@@ -1,24 +1,19 @@
 import { useEffect, useState } from 'react'
-import { subscribeToVendor, subscribeToMenu } from '../services/vendors.js'
+import { subscribeToVendor, subscribeToMenuByCategory } from '../services/vendors.js'
 
-export function useVendor(vendorId) {
+export function useVendor(vendorId, category = 'All') {
     const [vendor, setVendor] = useState(undefined) 
-
     const [menu, setMenu] = useState([])
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        const stopVendor = subscribeToVendor(vendorId, setVendor, (err) => setError(err.message))
-        const stopMenu = subscribeToMenu(vendorId, setMenu, (err) => setError(err.message))
-        // TODO 2: return ONE cleanup function that calls stopVendor() and stopMenu()
-        // Hint: return () => { ... }
-        // return stopVendor, stopMenu salah
-
-        return () => {
-            stopVendor()
-            stopMenu()
-        }
+        return subscribeToVendor(vendorId, setVendor, (err) => setError(err.message))
     }, [vendorId])
+
+    useEffect(() => {
+        return subscribeToMenuByCategory(vendorId, category, setMenu, (err) => setError(err.message))
+    }, [vendorId, category])
 
     return {vendor, menu, loading: vendor === undefined && !error, error}
 }
+

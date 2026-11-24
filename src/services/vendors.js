@@ -1,4 +1,4 @@
-import  { collection, doc, onSnapshot, writeBatch } from 'firebase/firestore'
+import  { collection, doc, onSnapshot, writeBatch, query, where } from 'firebase/firestore'
 import { db } from '../firebase.js'
 
 // Hierarchy: Collection -> Document
@@ -39,4 +39,14 @@ export async function seedDemoData(vendors) {
         }
     }
     await batch.commit()
+}
+
+export function subscribeToMenuByCategory(vendorId, category, onData, onError) {
+    const menuRef = collection(db, 'vendors', vendorId, 'menu')
+    const q = category === 'All' ? menuRef : query(menuRef, where('category', '==', category))
+    return onSnapshot(
+        q,
+        (snapshot) => onData(snapshot.docs.map((d) => ({ id: d.id, vendorId, ...d.data() }))),
+        onError,
+    )
 }

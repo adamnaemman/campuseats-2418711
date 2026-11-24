@@ -12,8 +12,8 @@ function VendorPage() {
     const { user } = useAuth()
     const [savedCategory, setSavedCategory] = useLocalStorage('ce-category-' + (user ? user.uid : 'guest'), 'All')
     
-    const { vendor, menu, loading, error } = useVendor(id)
     const selectedCategory = searchParams.get('cat') ?? (user ? savedCategory : 'All')
+    const { vendor, menu, loading, error } = useVendor(id, selectedCategory)
     function handleSelectCategory(category) {
         if (user) setSavedCategory(category)
         if (category === 'All') {
@@ -37,11 +37,9 @@ function VendorPage() {
         )
     }
 
-    const categories = ['All', ...new Set(menu.map((item) => item.category))]
-    const items = (selectedCategory === 'All'
-        ? menu
-        : menu.filter((item) => item.category === selectedCategory)
-        ).map((item) => ({ ...item, vendorName:vendor.name }))
+    const categories = ['All', ...(vendor.categories ?? [])]
+    const items = menu.map((item) => ({ ...item, vendorName: vendor.name }))
+
 
     return (
         <section>

@@ -19,7 +19,8 @@
       { "id": "2418711-m-2", "name": "Mochi Durian", "description": "Rich durian flavor", "price": 28.00, "category": "Mochi", "available": true },
       { "id": "2418711-m-3", "name": "Mochi Chocolate", "description": "Made by Original Matcha", "price": 28.00, "category": "Mochi", "available": true }
     ],
-    "sortOrder": 1
+    "sortOrder": 1,
+    "categories": ["Kek Tapak Kuda", "Cheese Cake", "Mochi"]
   },
   {
     "id": "2411925-furtive-katfe",
@@ -101,7 +102,8 @@
           "available": true
       }
     ],
-    "sortOrder": 2
+    "sortOrder": 2,
+    "categories": ["Dessert", "Drinks", "Snacks"]
     },
   {
     "id": "2410493-jazz-coffee",
@@ -183,7 +185,8 @@
         "available": true
       }
     ],
-    "sortOrder" :3
+    "sortOrder" :3,
+    "categories": ["Drinks", "Pastries", "Desserts"]
   }
 ]
  

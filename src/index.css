@@ -285,3 +285,6 @@ a.card:hover { border-color: var(--green-light); }
   text-decoration: none;
 }
 
+.status-steps { display: flex; gap: 0.4rem; list-style: none; padding: 0; flex-wrap: wrap; }
+.status-steps li { padding: 0.15rem 0.6rem; border-radius: 999px; background: #eef0f3; font-size: 0.8rem; }
+.status-steps li.done { background: var(--green); color: #fff; }

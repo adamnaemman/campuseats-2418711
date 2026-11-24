@@ -3,10 +3,13 @@ import { CartContext } from './cart-context.js'
 
 export function CartProvider({ children }) {
     const [cart, setCart] = useLocalStorage('campuseats-cart', [])
-    const [orders, setOrders] = useLocalStorage('campuseats-orders', [])
 
     const count = cart.reduce((sum, line) => sum +line.qty, 0)
     const total = cart.reduce((sum, line) => sum + line.item.price * line.qty, 0)
+
+    function clearCart() {
+        setCart([])
+    }
 
     function addToCart(item) {
         setCart((prev) => {
@@ -34,22 +37,9 @@ export function CartProvider({ children }) {
         setCart((prev) => prev.filter((line) => line.item.id !== itemId))
     }
 
-    function placeOrder(details) {
-        const order = {
-            id: crypto.randomUUID(),
-            placeAt: new Date().toISOString(),
-            ...details,
-            items: cart,
-            total,
-        }
-        setOrders((prev) => [order, ...prev])
-        setCart([])
-        return order
-    }
-
     const value = {
-        cart, orders, count, total,
-        addToCart, changeQty, removeFromCart, placeOrder,
+        cart, count, total,
+        addToCart, changeQty, removeFromCart, clearCart,
     }
 
     return <CartContext.Provider value={value}>{children}</CartContext.Provider>

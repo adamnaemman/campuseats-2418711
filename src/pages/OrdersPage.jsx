@@ -1,8 +1,13 @@
 import { Link } from 'react-router'
-import { useCart } from '../hooks/useCart.js'
+import OrderStatus from '../components/OrderStatus.jsx'
+import { Loading, ErrorMessage } from '../components/Status.jsx'
+import { useMyOrders } from '../hooks/useMyOrders.js'
 
 function OrdersPage() {
-    const { orders } = useCart()
+    const { orders, loading, error } = useMyOrders()
+
+    if (loading) return <Loading />
+    if (error) return <ErrorMessage message={error} onRetry={() => window.location.reload()} />
 
     if (orders.length === 0) {
         return (
@@ -17,21 +22,14 @@ function OrdersPage() {
     return (
         <section>
             <h2 className="section-title">Your orders</h2>
-            <ul className="cart-list">
+            <ul className="order-list">
                 {orders.map((order) => (
                     <li key={order.id} className="card">
-                        <h3>Order #{order.id.slice(0, 8)}</h3>
-                        <p className="muted">
-                            {order.name} &middot; Mahallah {order.mahallah} &middot; Pickup {order.pickupTime}
-                        </p>
-                        <ul>
-                            {order.items.map((line) => (
-                                <li key={line.item.id}>
-                                    {line.qty} &times; {line.item.name} &mdash; RM {(line.item.price * line.qty).toFixed(2)}
-                                </li>
-                            ))}
-                        </ul>
-                        <p className="cart-total">Total: RM {order.total.toFixed(2)}</p>
+                        <p className="cart-name">{order.vendorName} · pickup {order.pickupTime}</p>
+                        <p className="muted">{order.items.map((i) => `${i.qty}× ${i.name}`).join(', ')}</p>
+                        <p className="muted">Placed {order.createdAt ? order.createdAt.toDate().toLocaleString('en-MY') : 'just now'}</p>
+                        <p className="price">RM {order.total.toFixed(2)}</p>
+                        <OrderStatus status={order.status} />
                     </li>
                 ))}
             </ul>

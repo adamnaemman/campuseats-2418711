@@ -1,3 +1,5 @@
+import { useAuth } from '../hooks/useAuth.js'
+import { useLocalStorage } from '../hooks/useLocalStorage.js'
 import { useParams, useSearchParams } from 'react-router'
 import CategoryFilter from '../components/CategoryFilter.jsx'
 import MenuList from '../components/MenuList.jsx'
@@ -5,12 +7,15 @@ import { Loading, ErrorMessage } from '../components/Status.jsx'
 import { useVendors } from '../hooks/useVendors.js'
 
 function VendorPage() {
+    const { user } = useAuth()
     const { id } = useParams()
     const [searchParams, setSearchParams] = useSearchParams()
     const { vendors, loading, error, reload } = useVendors()
-    const selectedCategory = searchParams.get('cat') ?? 'All'
+    const [savedCategory, setSavedCategory] = useLocalStorage('ce-category-' + (user ? user.uid : 'guest'), 'All')
+    const selectedCategory = searchParams.get('cat') ?? (user ? savedCategory : 'All')
 
     function handleSelectCategory(category) {
+        if (user) setSavedCategory(category)
         if (category === 'All') {
             setSearchParams({})
         } else {

@@ -32,3 +32,13 @@
 ### WHat I rejected:-  I do not accept unnecessary commit, I also reject the its first B1 suggestion which is to add a new `pickedVendorId` state, because Lab sheet does not have it
 ### Why:- Because I think AI can provide the solution but I must confirm it that it is priority or not. I understand the AI solution before I retype to my campuseats repo
 ### One thing the AI got wrong and how I fixed it: None
+
+## Week 5-
+### Tool(s):- Deepseek v4.1 Flash through Hermes Agent
+### What I asked for:- I asked it for guide me step by step through code and to test me with quiz questions about my own code. I typed every line myself; I did not let it write the code for me.
+### What I kept:- I followed the based on the previous coding from Week 4
+### What I changed:-  I changed the selectedCategory to """const [savedCategory, setSavedCategory] = useLocalStorage('ce-category-' + (user ? user.uid : 'guest'), 'All')"""
+### What I rejected:- I do not rejected it's idea, I following it since it is correct from my understanding
+### Why:- It is because everything make sense according to the flow of coding
+### One thing the AI got wrong and how I fixed it:- None
+

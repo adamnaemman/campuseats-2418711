@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
 
 // Values come from .env.local (VITE_ prefix makes them visible to the client).
 // Never commit real keys for a private project; .env.local is gitignored.
@@ -15,3 +16,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 
 export const auth = getAuth(app)
+export const db = getFirestore(app)

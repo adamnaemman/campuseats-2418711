@@ -1,4 +1,4 @@
-import { collection, doc, onSnapshot, query, where, serverTimestamp, writeBatch } from 'firebase/firestore'
+import { collection, doc, onSnapshot, query, where, serverTimestamp, writeBatch, updateDoc, deleteDoc } from 'firebase/firestore'
 import { db } from '../firebase.js'
 
 export async function placeOrders(user, cart, details) {
@@ -38,4 +38,13 @@ export function subscribeToMyOrders(uid, onData, onError) {
         orders.sort((a, b) => (b.createdAt?.toMillis?.()?? Date.now()) - (a.createdAt?.toMillis?.() ?? Date.now()))
         onData(orders)
     }, onError)
+}
+
+export function changePickupTime(orderId, pickupTime) {
+  return updateDoc(doc(db, 'orders', orderId), { pickupTime })
+}
+
+export function cancelOrder(orderId) {
+  // TODO 5: return deleteDoc(...) untuk dokumen orders/{orderId}
+  return deleteDoc(doc(db, 'orders', orderId))
 }

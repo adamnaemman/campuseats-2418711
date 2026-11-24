@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import OrderStatus from '../components/OrderStatus.jsx'
 import { Loading, ErrorMessage } from '../components/Status.jsx'
 import { useMyOrders } from '../hooks/useMyOrders.js'
+import OrderActions from '../components/OrderActions.jsx'
 
 function OrdersPage() {
     const { orders, loading, error } = useMyOrders()
@@ -30,6 +31,7 @@ function OrdersPage() {
                         <p className="muted">Placed {order.createdAt ? order.createdAt.toDate().toLocaleString('en-MY') : 'just now'}</p>
                         <p className="price">RM {order.total.toFixed(2)}</p>
                         <OrderStatus status={order.status} />
+                        {order.status === 'Received' && <OrderActions order={order} />}
                     </li>
                 ))}
             </ul>

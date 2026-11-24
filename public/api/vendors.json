@@ -18,7 +18,8 @@
       { "id": "2418711-m-1", "name": "Mochi Matcha", "description": "Made with original Japanese matcha ganache", "price": 28.00, "category": "Mochi", "available": true },
       { "id": "2418711-m-2", "name": "Mochi Durian", "description": "Rich durian flavor", "price": 28.00, "category": "Mochi", "available": true },
       { "id": "2418711-m-3", "name": "Mochi Chocolate", "description": "Made by Original Matcha", "price": 28.00, "category": "Mochi", "available": true }
-    ]
+    ],
+    "sortOrder": 1
   },
   {
     "id": "2411925-furtive-katfe",
@@ -99,7 +100,8 @@
           "popular": true,
           "available": true
       }
-    ]
+    ],
+    "sortOrder": 2
     },
   {
     "id": "2410493-jazz-coffee",
@@ -180,7 +182,8 @@
         "popular": false,
         "available": true
       }
-    ]
+    ],
+    "sortOrder" :3
   }
 ]
  

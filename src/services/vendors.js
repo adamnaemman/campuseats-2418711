@@ -5,7 +5,11 @@ import { db } from '../firebase.js'
 export function subscribeToVendors(onData, onError) { 
     return onSnapshot(
         collection(db, 'vendors'),
-        (snapshot) => onData(snapshot.docs.map((d) => ({id: d.id, ...d.data() }))),
+        (snapshot) => onData(
+            snapshot.docs
+                .map((d) => ({id: d.id, ...d.data() }))
+                .sort((a, b) => (a.sortOrder ?? 99) - (b.sortOrder ?? 99)),
+        ),
         onError,
     )
 }
